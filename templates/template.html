@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${file_name}</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+                sans-serif;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        #app {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        blockquote {
+            background-color: #f8f8f8;
+            border-left: 4px solid #42b883;
+            margin: 1.5em 0;
+            padding: 1em;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        a {
+            text-decoration: none;
+            color: #42b883;
+        }
+
+        @page {
+            size: a4;
+            margin: 20mm 10mm 10mm 10mm;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>${title}</h1>
+            <blockquote>
+                <p>📝 本文件由喜剧饭自动转换生成。</p>
+                <p>👨‍💻 整理：稀饭</p>
+                <p>🌐 网站：<a href="https://comedy.xifan.fun">https://comedy.xifan.fun</a></p>
+                <p>📅 创建时间：${timestamp}</p>
+                <p>⚠️ 注意：转换结果可能存在错误，请谨慎使用。</p>
+                <p>📢 说明： 本文本为互联网采集，仅供学习交流使用。可随意转载，但请保留以上信息。</p>
+            </blockquote>
+        </header>
+        <main>
+            ${content}
+        </main>
+    </div>
+</body>
+
+</html>
